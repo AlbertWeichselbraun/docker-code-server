@@ -21,6 +21,8 @@ RUN \
     libatomic1 \
     nano \
     net-tools \
+    python3 \
+    python3-tk \
     sudo && \
   echo "**** install code-server ****" && \
   if [ -z ${CODE_RELEASE+x} ]; then \
