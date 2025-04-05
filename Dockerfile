@@ -23,7 +23,9 @@ RUN \
     net-tools \
     python3 \
     python3-tk \
+    python3-pip \
     sudo && \
+  pip install --break-system-packages inscriptis && \
   echo "**** install code-server ****" && \
   if [ -z ${CODE_RELEASE+x} ]; then \
     CODE_RELEASE=$(curl -sX GET https://api.github.com/repos/coder/code-server/releases/latest \
